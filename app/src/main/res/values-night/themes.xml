@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.ElectricityBillCalculator" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Background and text -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+
+        <!-- ActionBar styling -->
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+
+        <!-- Button styling -->
+        <item name="buttonStyle">@style/AppTheme.Button</item>
+
+        <!-- RadioButton styling -->
+        <item name="radioButtonStyle">@style/AppTheme.RadioButton</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="AppTheme.ActionBar" parent="Widget.MaterialComponents.ActionBar.Solid">
+        <item name="background">@color/colorPrimary</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="displayOptions">showHome|homeAsUp|showTitle</item>
+    </style>
+
+    <!-- Button styles -->
+    <style name="AppTheme.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="cornerRadius">4dp</item>
+    </style>
+
+    <!-- RadioButton styles -->
+    <style name="AppTheme.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+</resources>

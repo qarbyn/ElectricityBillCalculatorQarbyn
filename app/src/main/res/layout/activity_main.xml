@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electricity Bill Calculator"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Month Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/monthSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_background"
+            android:hint="Select month"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Units Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Units Used (kWh)"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/unitsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColor="@color/text_primary"
+            android:hint="Enter units"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Rebate Percentage -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rebate Percentage"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rebateRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/radio1Percent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1%"
+                android:textColor="@color/text_primary"/>
+
+            <RadioButton
+                android:id="@+id/radio2Percent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2%"
+                android:textColor="@color/text_primary"/>
+
+            <RadioButton
+                android:id="@+id/radio3Percent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3%"
+                android:textColor="@color/text_primary"/>
+
+            <RadioButton
+                android:id="@+id/radio4Percent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4%"
+                android:textColor="@color/text_primary"/>
+
+            <RadioButton
+                android:id="@+id/radio5Percent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5%"
+                android:textColor="@color/text_primary"/>
+        </RadioGroup>
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Calculate"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Results -->
+        <TextView
+            android:id="@+id/totalChargesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/finalCostTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Save Bill"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"/>
+
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/viewHistoryButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="History"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/aboutButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="About"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
